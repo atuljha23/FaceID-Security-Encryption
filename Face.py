@@ -186,8 +186,7 @@ while True:
              ##   print("Face Detected Opening the Two-Step Verification System")
             ##    exec(open('script.py').read())
             else:
-                os.system("say -v Daniel Woh! there, I'm Afraid to say But you are not authorized to access the files")
-
+                os.system("say -v Daniel Sorry but you are not authorised to access the files.")
 
             face_names.append(name)
 
@@ -216,6 +215,7 @@ while True:
     # Hit 'q' on the keyboard to quit!
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
+
 
 # Release handle to the webcam
 video_capture.release()
